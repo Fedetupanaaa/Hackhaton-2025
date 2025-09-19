@@ -1,2 +1,2 @@
 # Hackhaton-2025
-Hackhaton-2025 Kodland
+Proyecto para inhibir el cambio climatico
