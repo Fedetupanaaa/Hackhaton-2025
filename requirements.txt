@@ -1,0 +1,7 @@
+tensorflow 
+discord.py
+numpy 
+requests 
+pillow 
+traductor
+
