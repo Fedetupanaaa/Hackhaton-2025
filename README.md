@@ -18,5 +18,9 @@ Proyecto para inhibir el cambio climatico
 - ¿Sueles reciclar tus residuos?
 - ¿Cuántas veces comes carne a la semana?
 - ¿Usas bombillas LED en casa?
-
+>Y luego darles un puntaje de huella de carbono aproximado
+>(bajo,
+> medio
+>o
+>alto)
 
