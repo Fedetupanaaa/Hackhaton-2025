@@ -1,7 +1,3 @@
-tensorflow 
-discord.py
-numpy 
-requests 
-pillow 
-traductor
-
+deep-translator = "*"
+pyttsx3 = "*"
+discord = "*"
