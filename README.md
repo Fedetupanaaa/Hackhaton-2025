@@ -2,8 +2,7 @@
 Proyecto para inhibir el cambio climatico
 
 ## Esta es la idea de mi proyecto 
-> Crear motores de avion comerciales electricos
->  crear vehiculos solo con energia renovable 
+> Un Bot de discord para calcular la huella de carbono y consejos del medio ambiente
 
 ## Este es mi tipo de proyecto
 > Bots de Discord 
@@ -21,7 +20,9 @@ Proyecto para inhibir el cambio climatico
 >Y luego darles un puntaje de huella de carbono aproximado(bajo, medio o alto)
 
 ## Biblioteca 
-
+- https://pypi.org/project/deep-translator
+- https://pypi.org/project/pyttsx3
 ## Referencia
-
+- ...
 ## Guía
+- ...
