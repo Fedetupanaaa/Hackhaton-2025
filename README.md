@@ -18,6 +18,7 @@ Proyecto para inhibir el cambio climatico
 - 💡 ¿Cómo es tu consumo de electricidad?
 - ✈️ ¿Con qué frecuencia viajas en avión?
 - 🚬 ¿Fumas con  frecuencia?
+- 👕 ¿Cada cuánto compras ropa nueva?
 >Y luego darles un puntaje de huella de carbono aproximado(bajo, medio o alto)
 
 ## Biblioteca 
