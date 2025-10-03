@@ -48,8 +48,10 @@ async def ayuda(ctx):
                    " y saber si es baja, media o alta."
                    "tambien puede utilizar el comando $cambioclimatico"
                    "Para saber que es el cambio climatico"
-                   "y por ultimo el comando $datocurioso"
-                   " para obtener un dato curioso sobre el clima.")
+                   "el comando $datocurioso"
+                   " para obtener un dato curioso sobre el clima."
+                   "Finalmente, el comando $Recomendaciones para obtener "
+                   "obviamente recomendaciones")
 
 consejomedia = [
     "usar transporte público en lugar de conducir",
