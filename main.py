@@ -1,7 +1,6 @@
 import discord
 import requests
 from discord.ext import commands
-import pyttsx3
 from deep_translator import GoogleTranslator
 import random
 
@@ -15,17 +14,6 @@ def traducir(text: str) -> str:
         return text
 
 
-def talk(text: str):
-    """Lee en voz alta un texto con pyttsx3."""
-    engine = pyttsx3.init()
-    engine.setProperty("rate", 125)
-    engine.setProperty("volume", 1.0)
-    voices = engine.getProperty("voices")
-    engine.setProperty("voice", voices[0].id)
-    engine.say(text)
-    engine.runAndWait()
-
-
 intents = discord.Intents.default()
 intents.message_content = True
 
@@ -33,9 +21,11 @@ bot = commands.Bot(command_prefix="$", intents=intents)
 
 
 @bot.command()
-async def hola(ctx):
-    await ctx.send("Hola soy tu asistente virtual")
-    talk("Hola soy tu asistente virtual")
+async def cambioclimatico(ctx):
+    await ctx.send("cambio previsible en el clima terrestre"
+                   " provocado por la acción humana"
+                   " que da lugar al efecto invernadero"
+                   " y al calentamiento global")
 
 
 def climate_datazo() -> str:
