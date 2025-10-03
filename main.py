@@ -19,6 +19,8 @@ intents.message_content = True
 
 bot = commands.Bot(command_prefix="$", intents=intents)
 
+"""Comando para definir cambio climático."""
+
 
 @bot.command()
 async def cambioclimatico(ctx):
@@ -26,6 +28,22 @@ async def cambioclimatico(ctx):
                    " provocado por la acción humana"
                    " que da lugar al efecto invernadero"
                    " y al calentamiento global")
+
+"""Comando de ayuda."""
+
+
+@bot.command()
+async def help(ctx):
+    await ctx.send(" puede utilizar el comando $infoatmosfera"
+                   " para obtener información sobre la atmósfera"
+                   " y su relación con el cambio climático"
+                   ". También puede usar el comando $huella "
+                   "para iniciar un cuestionario sobre la huella de carbono"
+                   " y saber si es baja, media o alta."
+                   "tambien puede utilizar el comando $cambioclimatico"
+                   "Para saber que es el cambio climatico")
+
+"""Función para obtener informacion de la atmosfera"""
 
 
 def climate_datazo() -> str:
@@ -78,7 +96,8 @@ async def infoatmosfera(ctx):
     await ctx.send(f"Tu dato curioso atmosférico es: {factu}")
 
 
-# Preguntas del cuestionario de huella de carbono
+"""Preguntas del cuestionario de huella de carbono"""
+
 preguntas = [
     {
         "pregunta": "🚗 ¿Con qué frecuencia usas el automóvil?",
