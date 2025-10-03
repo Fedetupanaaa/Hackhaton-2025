@@ -33,6 +33,12 @@ async def cambioclimatico(ctx):
 
 
 @bot.command()
+async def Recomendaciones(ctx):
+    await ctx.send(f"Una recomendacion {random.choice(consejomedia)}"
+                   f"o este {random.choice(consejoalta)}")
+
+
+@bot.command()
 async def ayuda(ctx):
     await ctx.send(" puede utilizar el comando $infoatmosfera"
                    " para obtener información sobre la atmósfera"
@@ -45,6 +51,20 @@ async def ayuda(ctx):
                    "y por ultimo el comando $datocurioso"
                    " para obtener un dato curioso sobre el clima.")
 
+consejomedia = [
+    "usar transporte público en lugar de conducir",
+    "compartir coche con otras personas",
+    "caminar o andar en bicicleta para distancias cortas",
+    "reducir el uso de aire acondicionado",
+    "apagar las luces y  dispositivos electrónicos cuando no se usan"
+]
+consejoalta = [
+    "Usar bombillas de bajo consumo o LED",
+    "instalar paneles solares en casa",
+    "Utilizar electrodomésticos que utilizen bajo consumo de energía",
+    "reducir el consumo de carne y productos lácteos",
+    "Comprar productos locales y de temporada"
+]
 
 """Función para obtener informacion de la atmosfera"""
 
@@ -197,17 +217,21 @@ async def huella(ctx):
         resultado = (
             " Tu huella de carbono es media. "
             "Se puede mejorar."
+            f"por que no pruebas con {random.choice(consejomedia)}"
         )
     else:
         resultado = (
-            " Tu huella de carbono es **alta**. "
+            " Tu huella de carbono es alta. "
             "Intenta reducir tus emisiones."
+            f"por que no pruebas con {random.choice(consejoalta)}"
         )
     await ctx.send(
         f"terminado\n"
         f"Puntuación total: {score}\n"
         f"{resultado}"
     )
+
+"""Lista de datos curiosos sobre el clima."""
 
 datocuriosos = [
     (
