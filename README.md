@@ -2,7 +2,7 @@
 Proyecto para inhibir el cambio climatico
 
 ## Esta es la idea de mi proyecto 
-> Un Bot de discord para calcular la huella de carbono y consejos del medio ambiente
+> Un Bot de discord para calcular la huella de carbono y decir datos atmosfericos
 
 ## Este es mi tipo de proyecto
 > Bots de Discord 
@@ -11,18 +11,18 @@ Proyecto para inhibir el cambio climatico
 - Explorar la documentación de la biblioteca
 - Archivos y carpetas
 - Entornos virtuales
-> Se tratara de un Bot de discord que te diga el clima y consejos para el cambio climatico 
+> Se tratara de un Bot de discord que te diga datos de la atmosfera 
 > El bot podría preguntar a los usuarios cosas simples sobre sus hábitos diarios (ejemplo:
-- ¿Cuántas veces por semana usas transporte público o coche?
-- ¿Sueles reciclar tus residuos?
-- ¿Cuántas veces comes carne a la semana?
-- ¿Usas bombillas LED en casa?
+- 🚗 ¿Con qué frecuencia usas el automóvil?
+- ♻️ ¿Sueles reciclar?
+- 💡 ¿Cómo es tu consumo de electricidad?
+- ✈️ ¿Con qué frecuencia viajas en avión?
+- 🚬 ¿Fumas con  frecuencia?
 >Y luego darles un puntaje de huella de carbono aproximado(bajo, medio o alto)
 
 ## Biblioteca 
 - https://pypi.org/project/deep-translator
-- https://pypi.org/project/pyttsx3
 ## Referencia
-- ...
+- ... ninguna
 ## Guía
-- ...
+- ... 
