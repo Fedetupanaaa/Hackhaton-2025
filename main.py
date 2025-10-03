@@ -33,7 +33,7 @@ async def cambioclimatico(ctx):
 
 
 @bot.command()
-async def help(ctx):
+async def ayuda(ctx):
     await ctx.send(" puede utilizar el comando $infoatmosfera"
                    " para obtener información sobre la atmósfera"
                    " y su relación con el cambio climático"
@@ -41,7 +41,10 @@ async def help(ctx):
                    "para iniciar un cuestionario sobre la huella de carbono"
                    " y saber si es baja, media o alta."
                    "tambien puede utilizar el comando $cambioclimatico"
-                   "Para saber que es el cambio climatico")
+                   "Para saber que es el cambio climatico"
+                   "y por ultimo el comando $datocurioso"
+                   " para obtener un dato curioso sobre el clima.")
+
 
 """Función para obtener informacion de la atmosfera"""
 
@@ -205,6 +208,58 @@ async def huella(ctx):
         f"Puntuación total: {score}\n"
         f"{resultado}"
     )
+
+datocuriosos = [
+    (
+        "el dióxido de carbono (CO₂) es un gas de efecto invernadero "
+        "que contribuye al calentamiento global"
+    ),
+    (
+        "el metano (CH₄) es otro gas de efecto invernadero, con un "
+        "potencial de calentamiento mucho mayor que el CO₂"
+    ),
+    (
+        "la deforestación libera grandes cantidades de CO₂ a la atmósfera "
+        "y reduce la capacidad de los bosques para absorberlo"
+    ),
+    (
+        "los océanos absorben aproximadamente el 30% del CO₂ emitido por "
+        "las actividades humanas, lo que provoca la acidificación del agua"
+    ),
+    (
+        "el uso de energías renovables, como la solar y la eólica, puede "
+        "reducir significativamente las emisiones de gases de efecto "
+        "invernadero"
+    ),
+    (
+        "el transporte es una de las principales fuentes de emisiones de "
+        "CO₂ a nivel mundial"
+    ),
+    (
+        "la agricultura intensiva contribuye a las emisiones de metano y "
+        "óxido nitroso, ambos gases de efecto invernadero potentes"
+    ),
+    (
+        "el aumento de la temperatura global está provocando el derretimiento "
+        "de los glaciares y el aumento del nivel del mar"
+    ),
+    (
+        "las ciudades suelen tener temperaturas más altas que las zonas "
+        "rurales debido al efecto isla de calor urbano"
+    ),
+    (
+        "la contaminación del aire no solo afecta la salud humana, sino que "
+        "también puede influir en el clima local y global"
+    ),
+]
+
+"""Comando para datos curiosos del clima."""
+
+
+@bot.command()
+async def datocurioso(ctx):
+    datocuro = random.choice(datocuriosos)
+    await ctx.send(f"Hay te va un dato curioso: {datocuro}")
 
 
 bot.run(
