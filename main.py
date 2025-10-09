@@ -29,7 +29,7 @@ async def cambioclimatico(ctx):
                    " que da lugar al efecto invernadero"
                    " y al calentamiento global")
 
-"""Comando de ayuda."""
+"""Comando para recomendaciones."""
 
 
 @bot.command()
@@ -37,21 +37,19 @@ async def Recomendaciones(ctx):
     await ctx.send(f"Una recomendacion {random.choice(consejomedia)}"
                    f"o este {random.choice(consejoalta)}")
 
+"""Comando de ayuda."""
+
 
 @bot.command()
 async def ayuda(ctx):
-    await ctx.send(" puede utilizar el comando $infoatmosfera"
-                   " para obtener información sobre la atmósfera"
-                   " y su relación con el cambio climático"
-                   ". También puede usar el comando $huella "
-                   "para iniciar un cuestionario sobre la huella de carbono"
-                   " y saber si es baja, media o alta."
-                   "tambien puede utilizar el comando $cambioclimatico"
-                   "Para saber que es el cambio climatico"
-                   "el comando $datocurioso"
-                   " para obtener un dato curioso sobre el clima."
-                   "Finalmente, el comando $Recomendaciones para obtener "
-                   "obviamente recomendaciones")
+    await ctx.send(
+        "**Comandos disponibles:**\n"
+        " `$infoatmosfera`  Información sobre la atmósfera y el clima.\n"
+        " `$huella` Calcula tu huella de carbono.\n"
+        " `$cambioclimatico`  Define qué es el cambio climático.\n"
+        " `$datocurioso`  Muestra un dato curioso sobre el clima.\n"
+        " `$Recomendaciones`  Muestra consejos ecológicos."
+    )
 
 consejomedia = [
     "usar transporte público en lugar de conducir",
@@ -118,7 +116,7 @@ sobre clima."""
 @bot.command()
 async def infoatmosfera(ctx):
     factu = climate_datazo()
-    await ctx.send(f"Tu dato curioso atmosférico es: {factu}")
+    await ctx.send(f"Tu dato climático atmosférico es: {factu}")
 
 
 """Preguntas del cuestionario de huella de carbono"""
